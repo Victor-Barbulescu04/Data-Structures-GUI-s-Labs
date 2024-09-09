@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barbulescuv.controller.AutoCompleterController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="368.0">
+         <children>
+            <Button fx:id="selectFile" mnemonicParsing="false" onAction="#buttonPressed" text="Select File" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="368.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="45.0" text="Search" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchBar" onKeyTyped="#textChanged" prefHeight="27.0" prefWidth="308.0" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <TextArea fx:id="queryOutput" editable="false" prefHeight="249.0" prefWidth="355.0" />
+      <Label text="Unsorted List">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="28.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="Exact Query Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="unsortedExactTime" editable="false" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="All Matches Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="unsortedAllMatchTime" editable="false" prefHeight="25.0" prefWidth="250.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+      <Label text="Sorted List">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="28.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="Exact Query Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="sortedExactTime" editable="false" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="All Matches Time: ">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="sortedAllMatchTime" editable="false" prefHeight="25.0" prefWidth="250.0" />
+         </children>
+      </HBox>
+      <Label text="Binary Search Tree">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="28.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="Exact Query Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="binaryExactTime" editable="false" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="112.0" text="All Matches Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="binaryAllMatchTime" editable="false" prefHeight="25.0" prefWidth="254.0">
+               <HBox.margin>
+                  <Insets right="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Label text="Trie List">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="28.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="Exact Query Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="trieExactTime" editable="false" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="112.0" text="All Matches Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="trieAllMatchTime" editable="false" prefHeight="25.0" prefWidth="254.0">
+               <HBox.margin>
+                  <Insets right="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Label text=" HashTable">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <HBox prefHeight="28.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="106.0" text="Exact Query Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="hashExactTime" editable="false" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="368.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="112.0" text="All Matches Time: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="hashAllMatchTime" editable="false" prefHeight="25.0" prefWidth="254.0">
+               <HBox.margin>
+                  <Insets right="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</VBox>
